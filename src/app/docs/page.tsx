@@ -114,7 +114,7 @@ export default function docs() {
       <div className="text-center mt-8">
         <Link
           href="/byteyard"
-          className="text-blue-200 hover:underline text-3xl"
+          className="text-blue-400 hover:underline text-2xl"
         >
           Launch Byteyard
         </Link>
