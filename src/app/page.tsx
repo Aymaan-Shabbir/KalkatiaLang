@@ -43,7 +43,7 @@ export default function Home() {
         </div>
       </div>
 
-      <button className=" bg-[#FA163F] text-xl text-black font-semibold px-6 py-2 rounded-lg shadow-md hover:bg-yellow-600 hover:scale-105 transition-all duration-200 mt-3">
+      <button className=" bg-[#FA163F] text-xl text-black font-semibold px-6 py-2 rounded-lg shadow-md hover:bg-yellow-600 hover:scale-105 transition-all duration-200 mt-4">
         <SPAN text="npm install -g kalkatia-lang" />
       </button>
 
