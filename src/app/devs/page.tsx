@@ -17,11 +17,11 @@ export default function Devs() {
   ];
 
   return (
-    <div className="flex h-screen w-full items-center justify-around gap-4 flex-wrap">
+    <div className="flex h-screen max-w-screen items-center justify-around gap-4 flex-wrap mt-20">
       {dev.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col items-center justify-center bg-[#FF204E] text-white p-6 rounded-xl shadow-lg w-80"
+          className="flex flex-col items-center justify-center bg-[#219C90] text-white p-6 rounded-xl shadow-lg w-80"
         >
           <Image
             src={item.image}

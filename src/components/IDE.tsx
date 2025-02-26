@@ -58,13 +58,13 @@ naiTohMama {
   };
 
   return (
-    <div className="flex flex-col space-y-4 bg-gray-900 text-white p-5 rounded-lg shadow-lg max-w-4xl w-full">
-      <h1 className="text-4xl font-bold text-center mb-4 text-yellow-400">
-        🔥 Kalkatia.ts Playground
+    <div className="flex flex-col space-y-4 bg-gray-900 text-white py-3 px-2 rounded-lg shadow-lg  min-w-[80vw]">
+      <h1 className="text-2xl font-bold text-center mb-4 text-[#D83F31]">
+        ByteYard
       </h1>
 
       <Editor
-        height="300px"
+        height="400px"
         defaultLanguage="kolkatalang"
         theme="vs-dark"
         value={code}
@@ -105,12 +105,12 @@ naiTohMama {
 
       <button
         onClick={runCode}
-        className="bg-yellow-400 text-black px-5 py-2 rounded-lg text-lg font-bold hover:bg-yellow-500 transition-all duration-200"
+        className="bg-yellow-400 text-black px-3 py-2 rounded-lg text-lg font-bold hover:bg-yellow-500 transition-all duration-200"
       >
         Mama, Click for output.. 🚀
       </button>
 
-      <pre className="bg-gray-800 text-green-300 p-4 rounded-lg min-h-[100px]">
+      <pre className="bg-gray-800 text-green-300 p-4 rounded-lg min-h-[100px] flex flex-wrap flex-col max-w-[80vw] items-center  overflow-auto">
         {output || "Idhar taako mama"}
       </pre>
     </div>

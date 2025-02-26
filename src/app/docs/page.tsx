@@ -94,8 +94,8 @@ export default function docs() {
   ];
 
   return (
-    <div className="p-6 bg-gray-[#A0153E] text-white min-h-screen w-screen">
-      <h1 className="text-3xl font-bold text-center mb-6 text-red-400">
+    <div className="py-6 px-3 bg-gray-[#A0153E]  min-h-screen mt-20 w-full">
+      <h1 className="text-3xl font-bold text-center mb-6 text-[#D83F31]">
         Kalkatia Programming Language Documentation
       </h1>
       <div className="max-w-4xl mx-auto space-y-8">
@@ -114,9 +114,9 @@ export default function docs() {
       <div className="text-center mt-8">
         <Link
           href="/byteyard"
-          className="text-blue-400 hover:underline text-2xl"
+          className="text-[#EE9322] hover:underline text-2xl p-3 border rounded-lg bg-[#219C90] font-bold mb-6 border-[#EE9322] hover:bg-[#EE9322] hover:text-[#219C90]"
         >
-          Launch Byteyard
+          LAUNCH BYTEYARD
         </Link>
       </div>
     </div>
