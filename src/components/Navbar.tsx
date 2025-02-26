@@ -8,10 +8,10 @@ export default function Navbar() {
 
   return (
     <div className="w-full bg-[#FF204E] px-6 py-4 flex items-center justify-between relative">
-      
+      {/* Logo */}
       <h1 className="font-bold text-3xl text-white">KalkatiaLang</h1>
 
-      
+      {/* Mobile Menu Button */}
       <button
         className="md:hidden text-white bg-transparent outline-none focus:ring-0 mb-2"
         onClick={() => setIsOpen(!isOpen)}
@@ -42,14 +42,29 @@ export default function Navbar() {
       {isOpen && (
         <div className="absolute top-[100%] left-0 w-full bg-[#FF204E] shadow-md md:hidden transition-all duration-300 ease-in-out">
           <ul className="flex flex-col items-center gap-4 py-4">
-            <li className="hover:bg-[#A0153E] hover:rounded-lg px-6 py-3 cursor-pointer text-white text-xl font-bold w-full text-center">
-              Docs.
+            <li className="hover:bg-[#A0153E] hover:rounded-lg px-6 py-3 cursor-pointer w-full text-center">
+              <Link
+                href="/docs"
+                className="text-white text-xl font-bold block w-full py-2"
+              >
+                Docs.
+              </Link>
             </li>
-            <li className="hover:bg-[#A0153E] hover:rounded-lg px-6 py-3 cursor-pointer text-white text-xl font-bold w-full text-center">
-              Byteyard
+            <li className="hover:bg-[#A0153E] hover:rounded-lg px-6 py-3 cursor-pointer w-full text-center">
+              <Link
+                href="/byteyard"
+                className="text-white text-xl font-bold block w-full py-2"
+              >
+                Byteyard
+              </Link>
             </li>
-            <li className="hover:bg-[#A0153E] hover:rounded-lg px-6 py-3 cursor-pointer text-white text-xl font-bold w-full text-center">
-              Devs.
+            <li className="hover:bg-[#A0153E] hover:rounded-lg px-6 py-3 cursor-pointer w-full text-center">
+              <Link
+                href="/devs"
+                className="text-white text-xl font-bold block w-full py-2"
+              >
+                Devs.
+              </Link>
             </li>
           </ul>
         </div>
