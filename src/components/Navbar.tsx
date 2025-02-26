@@ -2,15 +2,21 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full bg-[#219C90] px-6 py-4 flex items-center justify-between fixed top-0 left-0 z-50">
+    <div className="w-full bg-[#FA163F] px-6 py-4 flex items-center justify-between fixed top-0 left-0 z-50">
       {/* Logo */}
       <Link href="/">
-        <h1 className="font-bold text-3xl text-white">KalkatiaLang</h1>
+        <Image
+          src="https://i.ibb.co/ymr4kJqP/kpl2.png"
+          alt="KalkatiaLang"
+          width={50}
+          height={50}
+        ></Image>
       </Link>
 
       {/* Mobile Menu Button */}
@@ -42,7 +48,7 @@ export default function Navbar() {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="absolute top-full left-0 w-full bg-[#219C90] shadow-md md:hidden transition-all duration-300 ease-in-out z-40">
+        <div className="absolute top-full left-0 w-full bg-[#FA163F] shadow-md md:hidden transition-all duration-300 ease-in-out z-40">
           <ul className="flex flex-col items-center gap-4 py-4">
             <li
               className="hover:bg-[#EE9322] hover:rounded-lg px-6 py-3 cursor-pointer w-full text-center"

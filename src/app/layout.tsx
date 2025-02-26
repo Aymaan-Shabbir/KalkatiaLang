@@ -12,7 +12,7 @@ export default function RootLayout({
         <title>Kalkatia.ts</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className="bg-[#E9B824] text-white min-h-screen flex flex-col items-center justify-center">
+      <body className="bg-[#12CAD6] text-white min-h-screen flex flex-col items-center justify-center">
         <Navbar />
         {children}
       </body>

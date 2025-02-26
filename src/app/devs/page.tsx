@@ -21,7 +21,7 @@ export default function Devs() {
       {dev.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col items-center justify-center bg-[#219C90] text-white p-6 rounded-xl shadow-lg w-80"
+          className="flex flex-col items-center justify-center bg-[#FA163F] text-white p-6 rounded-xl shadow-lg w-80"
         >
           <Image
             src={item.image}

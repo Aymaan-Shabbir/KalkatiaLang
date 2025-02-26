@@ -27,7 +27,7 @@ export class KolkataLang {
         )
 
         // Break statement
-        .replace(/dharrlis\(\);/g, "break;")
+        .replace(/dharlis\(\);/g, "break;")
 
         // Array declaration
         .replace(/aasteLadees\((.*?)\);/g, "[$1];")
@@ -38,6 +38,11 @@ export class KolkataLang {
 
         // Return statement (khuljao)
         .replace(/khuljao\((.*?)\);/g, "return $1;")
+
+        // Switch-case (jaundice)
+        .replace(/jaundice\s*\((.*?)\)\s*\{([\s\S]*?)\}/g, "switch ($1) { $2 }")
+        .replace(/case\s+(\d+):/g, "case $1:")
+        .replace(/default:/g, "default:")
     );
   }
 }

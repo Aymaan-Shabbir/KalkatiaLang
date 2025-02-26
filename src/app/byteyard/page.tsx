@@ -27,8 +27,8 @@ export default function byteyard() {
 
   return (
     <main className=" max-w-screen flex min-h-screen flex-col items-center justify-center p-5 mt-20">
-      <h1 className="text-2xl font-bold mb-4 text-[#D83F31] text-center">
-        Hello, {randomLocation}
+      <h1 className="text-2xl font-bold mb-4 text-[#19134c] text-center">
+        Hello, {randomLocation} .
       </h1>
       <IDE />
     </main>

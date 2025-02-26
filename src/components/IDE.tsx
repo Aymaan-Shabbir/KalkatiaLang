@@ -39,18 +39,18 @@ naiTohMama {
 
   const runCode = () => {
     let logs: string[] = [];
-    console.log = (msg: string) => logs.push(msg); // Capture console logs
+    console.log = (msg: string) => logs.push(msg);
 
     try {
       eval(KolkataLang.translate(code)); // Translate and execute the code
-      setOutput(logs.join("\n")); // Set the output to captured logs
+      setOutput(logs.join("\n"));
     } catch (err) {
       // Extract the line number from the error stack trace
       const stackLines = (err as Error).stack?.split("\n") || [];
-      const errorLineMatch = stackLines[1]?.match(/:(\d+):\d+/); // Match line number
+      const errorLineMatch = stackLines[1]?.match(/:(\d+):\d+/);
       const errorLine = errorLineMatch ? errorLineMatch[1] : "unknown";
 
-      // Set the output with the error message and line number
+      // error output and line
       setOutput(
         `SiyanaBanro: Error at line ${errorLine}: ${(err as Error).message}`
       );
@@ -60,7 +60,7 @@ naiTohMama {
   return (
     <div className="flex flex-col space-y-4 bg-gray-900 text-white py-3 px-2 rounded-lg shadow-lg  min-w-[80vw]">
       <h1 className="text-2xl font-bold text-center mb-4 text-[#D83F31]">
-        ByteYard
+        ByteYard💻
       </h1>
 
       <Editor
@@ -110,7 +110,7 @@ naiTohMama {
         Mama, Click for output.. 🚀
       </button>
 
-      <pre className="bg-gray-800 text-green-300 p-4 rounded-lg min-h-[100px] flex flex-wrap flex-col max-w-[80vw] items-center  overflow-auto">
+      <pre className="bg-gray-800 text-green-300 p-4 rounded-lg min-h-[100px] flex flex-wrap flex-col max-w-[80vw] items-start  overflow-auto">
         {output || "Idhar taako mama"}
       </pre>
     </div>
